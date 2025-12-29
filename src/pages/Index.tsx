@@ -1,13 +1,40 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Helmet } from "react-helmet-async";
+import StarField from "@/components/StarField";
+import Navigation from "@/components/Navigation";
+import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
+import ProductsSection from "@/components/ProductsSection";
+import WhyRemedySection from "@/components/WhyRemedySection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <>
+      <Helmet>
+        <title>Remedy - Premium Discord Tools & Solutions</title>
+        <meta
+          name="description"
+          content="Remedy is a sleek, powerful suite of Discord bots and tools designed for speed, stealth, and style. HWID Spoofer, ASCII Designer, Media Spammer & more."
+        />
+        <meta name="keywords" content="Remedy, Discord tools, HWID Spoofer, ASCII Designer, Discord bots" />
+      </Helmet>
+
+      <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+        <StarField />
+        <Navigation />
+        <main>
+          <HeroSection />
+          <AboutSection />
+          <ProductsSection />
+          <WhyRemedySection />
+          <TestimonialsSection />
+          <ContactSection />
+        </main>
+        <Footer />
       </div>
-    </div>
+    </>
   );
 };
 
