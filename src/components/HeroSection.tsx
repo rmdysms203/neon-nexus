@@ -48,55 +48,19 @@ const HeroSection = () => {
       
       {/* Main content */}
       <div className="relative z-10 text-center max-w-5xl mx-auto">
-        {/* Logo/Brand */}
-        <div className="relative mb-8">
-          <h1 
-            className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-display font-black tracking-[0.2em] md:tracking-[0.25em] select-none"
-            style={{
-              background: "linear-gradient(90deg, hsl(340, 100%, 58%) 0%, hsl(320, 100%, 50%) 25%, hsl(285, 100%, 50%) 50%, hsl(200, 100%, 60%) 75%, hsl(186, 100%, 46%) 100%)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              backgroundClip: "text",
-              filter: "drop-shadow(0 0 30px hsl(340, 100%, 58%, 0.5))",
-            }}
-          >
-            REMEDY
-          </h1>
-          
-          {/* Glitch layer 1 - Cyan offset */}
-          <h1 
-            className="absolute inset-0 text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-display font-black tracking-[0.2em] md:tracking-[0.25em] select-none pointer-events-none opacity-60"
-            style={{
-              background: "linear-gradient(90deg, hsl(186, 100%, 46%) 0%, hsl(186, 100%, 60%) 100%)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              backgroundClip: "text",
-              clipPath: "inset(0 0 60% 0)",
-              transform: "translate(-3px, -2px)",
-              animation: "glitch-1 3s infinite linear alternate-reverse",
-            }}
-            aria-hidden="true"
-          >
-            REMEDY
-          </h1>
-          
-          {/* Glitch layer 2 - Pink offset */}
-          <h1 
-            className="absolute inset-0 text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-display font-black tracking-[0.2em] md:tracking-[0.25em] select-none pointer-events-none opacity-60"
-            style={{
-              background: "linear-gradient(90deg, hsl(340, 100%, 58%) 0%, hsl(320, 100%, 50%) 100%)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              backgroundClip: "text",
-              clipPath: "inset(60% 0 0 0)",
-              transform: "translate(3px, 2px)",
-              animation: "glitch-2 2.5s infinite linear alternate",
-            }}
-            aria-hidden="true"
-          >
-            REMEDY
-          </h1>
-        </div>
+        {/* Logo/Brand - Clean gradient, no glitch */}
+        <h1 
+          className="text-6xl sm:text-8xl md:text-9xl lg:text-[10rem] font-display font-black tracking-[0.15em] md:tracking-[0.2em] mb-8 select-none"
+          style={{
+            background: "linear-gradient(135deg, #ff2a6d 0%, #d629d6 30%, #9d4edd 50%, #7b5cfa 70%, #05d9e8 100%)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            backgroundClip: "text",
+            filter: "drop-shadow(0 0 40px rgba(255, 42, 109, 0.4)) drop-shadow(0 0 80px rgba(5, 217, 232, 0.3))",
+          }}
+        >
+          REMEDY
+        </h1>
 
         {/* Tagline */}
         <div className="h-12 flex items-center justify-center mb-12">
